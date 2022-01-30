@@ -26,9 +26,6 @@ function sendText(text) {
 function sendMessages(text) {
     liff.sendMessages([{
         'type': 'text',
-        'text': "以下の内容でAPIキーを受信しました。"
-    },{
-        'type': 'text',
         'text': text
     }]).then(function () {
         liff.closeWindow();
